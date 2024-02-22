@@ -48,38 +48,48 @@ const Project = () => {
   }, [scrollYProgress]);
 
   return (
-    <motion.div
+    <div
       ref={projectContainer}
       className="flex flex-col items-center justify-center relative"
     >
-      <h1 className={`text-4xl ${isSticky ? "sticky" : "static"}  top-10`}>
+      <motion.h1
+        initial={{ x: -20 }}
+        animate={{ x: 0 }}
+        transition={{
+          duration: 1,
+        }}
+        className={`text-4xl ${isSticky ? "sticky" : "static"}  top-10`}
+      >
         My Projects
-      </h1>
+      </motion.h1>
       <div>
         {projects.map((project, index) => {
           const decreasingMargin = 8 * (projects.length - index);
           return (
             <div
-              className="h-screen sticky top-0 flex items-center"
+              className="h-screen sticky top-0 flex items-center pointer-events-none"
               key={index}
               style={{ top: `-${decreasingMargin}px` }}
             >
               <div
                 className={`flex flex-col md:flex-row gap-4 max-w-5xl ${
                   index % 2 === 0 ? "bg-white" : "bg-black"
-                } p-14 rounded-3xl mx-4`}
+                } p-14 rounded-3xl mx-4 pointer-events-auto`}
               >
-                <figure>
+                <figure className="relative rounded-2xl overflow-hidden">
                   <img src={project.img} alt={project.name} />
+                  <div className="absolute top-0 h-full w-full bg-black flex items-center justify-center opacity-0 hover:opacity-80">
+                    <button className="bg-white px-2 py-1 rounded-lg hover:scale-110">More Info</button>
+                  </div>
                 </figure>
                 <div className="grid gap-4">
                   <div className="flex flex-col md:flex-row md:justify-between items-center">
                     <h2 className="text-2xl py-2">{project.name}</h2>
-                    <div className="flex gap-2 ">
-                      <button className="bg-accentColor px-2 py-1 rounded-lg text-white text-sm h-fit md:text-lg">
+                    <div className="flex gap-4 ">
+                      <button className="bg-accentColor px-2 py-1 rounded-lg text-white text-sm h-fit md:text-lg hover:scale-110 ">
                         More Info
                       </button>
-                      <button className="bg-[#3D9EEE] px-2 py-1 rounded-lg text-white text-sm h-fit md:text-lg">
+                      <button className="bg-[#3D9EEE] px-2 py-1 rounded-lg text-white text-sm h-fit md:text-lg hover:scale-110">
                         More Info
                       </button>
                     </div>
@@ -91,7 +101,7 @@ const Project = () => {
           );
         })}
       </div>
-    </motion.div>
+    </div>
   );
 };
 

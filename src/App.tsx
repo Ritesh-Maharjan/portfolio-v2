@@ -1,15 +1,13 @@
-import "./App.css";
 import Header from "./component/Header";
 import HeroSection from "./component/HeroSection";
+import Project from "./component/Project";
 
 function App() {
   return (
-    <div className="bg-lightBackground dark:bg-darkBackground  text-darkText">
+    <div className="bg-lightBackground dark:bg-darkBackground  text-darkText relative">
       <Header />
       <HeroSection />
-      <button className="bg-accentColor opacity-85 text-white rounded-xl shadow-lg p-4">
-        View Project
-      </button>
+      <Project />
     </div>
   );
 }
