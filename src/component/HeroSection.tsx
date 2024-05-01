@@ -6,7 +6,7 @@ const HeroSection = () => {
   // Tagline for my hero
   const myDesc = [
     ["Hello", " My name", "is Ritesh"],
-    ["Full Stack", "Developer"],
+    ["Web", "Developer"],
     ["Passionate", "about", "innovation"],
     ["Code", "Dota", "Repeat"],
   ];
@@ -48,7 +48,7 @@ const HeroSection = () => {
       key={animationKey}
       className="min-h-screen mx-auto flex flex-col gap-8 items-center justify-center max-w-screen-lg relative -mt-20"
     >
-      {sentence.map((words, i) => {
+      {sentence?.map((words, i) => {
         return (
           // container of each words divided array
           <div className="flex" key={i}>

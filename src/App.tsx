@@ -1,13 +1,20 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./component/Header";
-import HeroSection from "./component/HeroSection";
-import Project from "./component/Project";
+import Home from "./page/Home";
+import ProjectDetail from "./page/ProjectDetail";
+import Footer from "./component/Footer";
 
 function App() {
   return (
-    <div className="bg-lightBackground dark:bg-darkBackground  text-darkText relative">
-      <Header />
-      <HeroSection />
-      <Project />
+    <div className="bg-blue-400 dark:bg-slate-900 text-slate-900 dark:text-darkText relative ">
+      <BrowserRouter basename="/">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/project/:id" element={<ProjectDetail />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }

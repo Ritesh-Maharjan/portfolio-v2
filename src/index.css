@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400..700;1,400..700&family=Metal+Mania&display=swap");
 @tailwind base;
 @tailwind components;
@@ -10,7 +11,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #0F172A;
+  background-color: #0f172a;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -27,7 +28,31 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "Metal Mania", system-ui;
-  font-weight: 400;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
   font-style: normal;
+  color: #88fcca;
+}
+
+.dark h1,
+.dark h2,
+.dark h3{
+  color: #96e6b3;
+}
+
+.media-height {
+  top: 5rem;
+}
+
+@media (min-height: 760px) {
+  .media-height {
+    top: 7rem;
+  }
+}
+
+@media (min-height: 900px) {
+  .media-height {
+    top: 11rem;
+  }
 }

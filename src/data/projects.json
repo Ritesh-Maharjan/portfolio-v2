@@ -1,0 +1,98 @@
+[
+  {
+    "id": "1",
+    "name": "MvDB",
+    "img": "mvdb.png",
+    "desc": "This is a movie bookmark website where you can find most of the movies that has been out and can favorite it so that you can come back to the site and see what movies you wanted to see.",
+    "live": "https://riteshmaharjan.com/mvdb/",
+    "github": "https://github.com/Ritesh-Maharjan/movie-database",
+    "technologies": [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/framermotion/framermotion-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
+    ],
+    "goals": [
+      "My key goal on building this project was making sure I know how to use the RESTful APIs through React and practice all the react stuffs that I learned in class. Since I already had a bit of knowledge of React, I decided to do this project solo and also learn framer motion and incorportate it in this project."
+    ],
+    "first_highlight": "There are couple of things that I am proud of in this website. I was really happy with the outcome since I incorporated everything I had planned to do. I was happy to create a slider using framer motion. I used HOC to make the slider reusable to reuse in another components leading to more DRY principle code. The cool part about this slider is once you reach to the end and if you drag a bit more, it will load more data from the API. Also it will only load more data depending upon which slider you dragged and not for all the ones. Here is a little bit demo of getting more data from API when you drag more at the end. ",
+    "first_highlight_src": "/mvdb_highlight1.mp4",
+    "first_highlight_src_img": "",
+    "first_highlight_src_alt": "",
+    "second_highlight": "Another cool thing I learned was Intersection Observer API. Since I was calling 5 APIs at once due to my design, the initial load was slow. I did some digging and found Intersection Observer API through which I only call the API that is currently visible on screen.",
+    "second_highlight_src": "",
+    "insights": [
+      "After completing this project, I am happy to say that I am fairly confident with my skills in React, TailwindCSS, and Framer motion. The project was comming fairly well but I reached the first issue when my discover section was completed. I realized that after reaching the end of my movies, I was not reaching the first movie and instead was showing blank page. I soon realized that I didn't had any condition set when I reached at the end so I added a if condition to reset the index of the movie array.",
+      "Other than that, I thought my website was done very well but I soon noticed a performance issue. When i was refreshing the page without cookies, I realized it took almost 6 seconds for the page to load. In order to solve it, I dropped my discover image quality so that it will still look good and will also not drop the speed. The second thing I did to fix it was to find a way where I can load my APIs only when they come visible to the screen and I could do that using Intersection Observer API. I did some googling and found how to use it. Ultimately I managed to make a good website and I am happy with the outcome."
+    ]
+  },
+  {
+    "id": "3",
+    "name": "BDWMassage",
+    "img": "bdwmassage.png",
+    "desc": "BDWMassage is a website for users to book an appointment for various services with its own specialty therapist depending upon their avilability.",
+    "live": "https://bdwmassage.bcitwebdeveloper.ca/",
+    "github": "https://github.com/htpwebdesign/bdwmassage-theme",
+    "technologies": [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/woocommerce/woocommerce-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+    ],
+    "goals": [
+      "This project was created by four of us where I lead the team. My goal for this project was to practise my wordpress, woocommerce and sass skills. It was also to learn how to work and coordinate as a team to create a full fledged website."
+    ],
+    "first_highlight": "I designed the logo in the illustrator. The idea came from oasis website when we were doing our research on different masssage website. The logo represents a person getting massaged by a duck walking in person back. In my childhood, I used to walk in my brother back for a massage so used that idea and created the duck walking on the person back.",
+    "first_highlight_src": "",
+    "first_highlight_src_img": "/bdw.png",
+    "first_highlight_src_alt": "a duck massaging the back",
+    "second_highlight": "The automatic creation of taxonomies when a post is created. I realized we had to type our therapist name twice in custom post types and in taxonomy so I thought it will be easier when a post was created a taxonomy of that title to be automatically generated so there will be consistency and less chance for error on human side. Here's a little demo of it:",
+    "second_highlight_src": "/bdwmassage.mp4",
+    "insights": [
+      "This project was very satisfying to work with, from creating logos to automatic creation of taxonomies and figuring out how to display only particular therapist in the service. At first, I tried to create a service taxonomy and staff taxonomy and found that process a bit repititive for person setting it up so I tried to think of a new way and learnt that only having one taxonomy was enough. The way I did it was grabbing taxonomy terms attached with that title then using that taxonomies title to query through the taxonomies to show the related post. I did this at first for both and later found another way to do it was to grab the slug name and using that slug name as a taxonomy terms to get all the related posts with that taxonomy. That's how I managed to solve this.",
+      "As we were building the project, we reached a problem where not all the therapist was showing for the provided service. The reason for this was a typo in creating staff name as taxonomy vs the staff post title. Then I thought wouldn't it better if we create a post and taxonomy will be automatically created. I liked the idea of it but had no idea how to get it started. I started asking chat gpt first which gave me an answer that was not working obviously but it did give me an idea how to start. So whole day of scouring through wordpress documentation, chat gpt and stack overflow i finally managed to get it working and it was a very good feeling of getting it accomplished."
+    ]
+  },
+  {
+    "id": "2",
+    "name": "EcoNp",
+    "img": "eco.png",
+    "desc": "This is a marketplace website where the user can be either a buyer or a seller. The user can sell their products by listing them up whereas buyer can buy the product and leave a reviews about the product. Only the review left by the user can be deleted or edited.",
+    "live": "https://ecommerce-nepal.onrender.com/",
+    "github": "https://github.com/Ritesh-Maharjan/EcoNp",
+    "technologies": [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongoose/mongoose-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg"
+    ],
+    "goals": [
+      "My key goal on building this project was to sharpen up my full stack knwoledge. I had built a MERN stack website previously but wanted to add additional features and cement the knowledge of the full stack. "
+    ],
+    "first_highlight": "I managed to integrate stripe API so that the buyer can buy products listed by the seller. I had to go through the documentation of stripe API and watched some videos regarding it and managed to use it in my website.",
+    "first_highlight_src": "",
+    "first_highlight_src_img": "",
+    "first_highlight_src_alt": "",
+    "second_highlight": "I also managed to create a password reset which has expiry time. The password reset link would be sent to the email.",
+    "second_highlight_src": "",
+    "insights": [
+      "I learnt a lot of tools while building this project. It was super fun to use nodemailer for first time to send email to the customer when they forgot the password. Used JWT token for secured login system and using Stripe API for payment method in the website. The only thing, I think could have been done better is to make the UI look more beautiful. I also struggled with formik to display errors that I was getting from the  backend but after watching countless videos and reading stackoverflow, managed to solve it."
+    ]
+  }
+]

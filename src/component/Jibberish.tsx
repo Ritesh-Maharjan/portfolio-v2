@@ -39,7 +39,7 @@ const JibberishAnimation: React.FC<{
           variants={variants}
           onAnimationComplete={onAnimationComplete}
           transition={{ duration: 2 + length }}
-          className="text-lg md:text-5xl border-2 border-black dark:border-white p-2 md:p-6"
+          className="text-xl uppercase sm:text-2xl md:text-3xl lg:text-4xl border-2 dark:text-white text-black border-black dark:border-white p-2 md:p-6"
         >
           {jibberishText}
         </motion.h1>
