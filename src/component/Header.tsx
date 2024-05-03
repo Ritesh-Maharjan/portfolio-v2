@@ -85,7 +85,7 @@ const Header = () => {
       </figure>
 
       <div
-        className="cursor-pointer fixed flex z-30 gap-2 flex-col right-5 top-5"
+        className="cursor-pointer fixed flex z-30 gap-2 flex-col right-5 bottom-5 sm:bottom-auto sm:top-5"
         onClick={() => setIsActive(!isActive)}
       >
         <div
