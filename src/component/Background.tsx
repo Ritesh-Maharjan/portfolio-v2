@@ -37,7 +37,7 @@ const Background = () => {
   }, [city]);
 
   return (
-    <div className="absolute overflow-hidden top-0 z-30 h-screen w-screen pointer-events-none">
+    <div className="absolute overflow-hidden top-0 h-screen z-30 left-0 right-0 pointer-events-none">
       <Weather src={`https://openweathermap.org/img/wn/${icon}@2x.png`} />
       <Weather src={`https://openweathermap.org/img/wn/${icon}@2x.png`} />
       <Weather src={`https://openweathermap.org/img/wn/${icon}@2x.png`} />

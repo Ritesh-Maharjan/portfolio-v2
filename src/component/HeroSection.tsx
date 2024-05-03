@@ -7,7 +7,7 @@ const HeroSection = () => {
   const myDesc = [
     ["Hello", " My name", "is Ritesh"],
     ["Web", "Developer"],
-    ["Passionate", "about", "innovation"],
+    ["Excited", "About", "Coding"],
     ["Code", "Dota", "Repeat"],
   ];
 

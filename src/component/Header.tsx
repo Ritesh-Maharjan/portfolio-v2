@@ -120,7 +120,7 @@ const Header = () => {
               <ul className="flex flex-col p-4 items-center justify-center h-full w-full gap-4">
                 <form onSubmit={handleSubmit} className="relative">
                   <input
-                    className="h-full p-2 w-full"
+                    className="h-full p-2 pr-10 w-full bg-black"
                     type="text"
                     placeholder="Enter city"
                     onChange={(e) => setCity(e.target.value)}
@@ -128,7 +128,7 @@ const Header = () => {
                   />
                   <button
                     type="submit"
-                    className="absolute top-1/2 -translate-y-1/2 right-4 h-6"
+                    className="absolute top-1/2 -translate-y-1/2 right-2 h-6"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
