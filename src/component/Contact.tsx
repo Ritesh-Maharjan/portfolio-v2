@@ -24,14 +24,14 @@ const Contact = () => {
         out! I'll try to get back to you as soon as possible 🤗
       </motion.p>
 
-      <div className="flex items-center gap-4 ">
+      <div className="flex items-center gap-8 ">
         <a href="https://www.linkedin.com/in/riteshmaharjn/">
           <motion.svg
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-            className="h-6 w-6 md:h-16 md:w-16 dark:text-slate-900 text-blue-400"
+            className="h-12 w-12 md:h-16 md:w-16 dark:text-slate-900 text-blue-400"
             viewBox="0 0 128 128"
           >
             <path
@@ -51,7 +51,7 @@ const Contact = () => {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 15 15"
             fill="currentColor"
-            className="h-6 w-6 md:h-16 md:w-16 fill-white"
+            className="h-12 w-12 md:h-16 md:w-16 fill-white"
             initial={{ scale: 0, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
             viewport={{ once: true }}
@@ -72,7 +72,7 @@ const Contact = () => {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="white"
-            className="w-7 h-7 md:h-20 md:w-20"
+            className="w-16 h-16 md:h-20 md:w-20"
             initial={{ x: 100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
