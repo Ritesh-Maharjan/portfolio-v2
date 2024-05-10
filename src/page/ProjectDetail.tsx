@@ -93,7 +93,7 @@ const ProjectDetail = () => {
           <motion.div
             initial={{ x: 0 }}
             animate={{ x: -(width * 64 + width * 56) }} //  multiplying with the image size and gap with total number of images
-            transition={{ ease: "linear", duration: 12, repeat: Infinity }}
+            transition={{ ease: "linear", duration: 4, repeat: Infinity }}
             ref={ref}
             className="flex gap-14"
           >

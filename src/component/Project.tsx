@@ -24,20 +24,20 @@ const Project = () => {
                 </h2>
               )}
               <div
-                className={`flex flex-col md:flex-row gap-4 h-fit max-w-5xl ${
+                className={`flex flex-col md:flex-row gap-4 h-80 max-w-5xl ${
                   index % 2 === 0
                     ? "bg-[#e3e1e1] text-[#0F172A]"
                     : "bg-black text-white dark:text-current"
                 } p-4 md:p-14 rounded-3xl mx-4 pointer-events-auto`}
               >
-                <figure className="relative min-h-14 max-h-48 rounded-xl overflow-hidden">
+                <figure className="relative flex-1 rounded-xl overflow-hidden">
                   <img
                     src={project.img}
                     alt={project.name}
                     className="h-full w-full object-cover object-top"
                   />
                   <div className="absolute top-0 h-full w-full bg-black flex items-center justify-center opacity-0 hover:opacity-80">
-                    <button className="bg-white text-black px-2 py-1 rounded-lg hover:scale-110">
+                    <button className="bg-white px-2 py-1 rounded-lg hover:scale-110">
                       More Info
                     </button>
                   </div>
